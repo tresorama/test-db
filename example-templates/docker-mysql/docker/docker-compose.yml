@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+# MySql Database used for Prisma as main
+  main-database:
+    image: mysql:8.0.17
+    environment:
+      MYSQL_DATABASE: main
+      MYSQL_ROOT_PASSWORD: helloworld
+    ports:
+      - "3308:3306"
+    volumes:
+      - ./data:/var/lib/mysql
+
+# Adminer UI 
+  adminer:
+    image: adminer:4.5.0
+    ports:
+      - "9090:8080"

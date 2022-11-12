@@ -1,0 +1,12 @@
+{
+  "name": "test-prisma",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/tresorama/test-prisma.git",
+  "author": "Jacopo Marrone",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "examples/*"
+  ]
+}
